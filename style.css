@@ -77,9 +77,20 @@ h2 {
     padding: 32px 0;
 
 }
-.header__inner {
+/* .header__inner {
     width: 1300px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+} */
+
+.header__nav {
+    display: none;
+}
+
+.header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,6 +121,31 @@ h2 {
 
 
 }
+
+@media  (mid-width: 1024px) {
+    .header__inner {
+        width: 968px;
+        margin: 0 auto;
+        padding: 32px 0;
+    }       
+
+.header__nav {
+    display: block;
+}    
+.header__hamburger {
+    display: none;
+
+}
+}
+
+@media  (mid-width: 1024px) {
+    .header__inner {
+        width: 1260px;
+    } 
+}
+
+
+
 
 /* LANDING SECTION */
 
